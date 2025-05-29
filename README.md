@@ -39,9 +39,12 @@ Va ensuite sur :
 http://localhost:5173
 
 
+
 npm install @headlessui/react @heroicons/react
+```
+Installe les composants d’interface Headless UI (pour les dialogues, menus, etc.) et les icônes Heroicons utilisés dans l’interface.
 
+```
 npm install @fortawesome/fontawesome-free
-
-
-
+```
+Installe la bibliothèque d’icônes Font Awesome, utilisée pour afficher les logos des réseaux sociaux dans le footer.
