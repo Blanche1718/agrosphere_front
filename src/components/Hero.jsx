@@ -103,7 +103,7 @@ export default function Hero() {
 
       <div className="relative isolate px-6 pt-14 lg:px-8"
       style={{
-        backgroundImage: "url('/images/log.jpg')",//Proposez une image de fond attrayante liée à l'agriculture.
+        backgroundImage: "url('/images/herobg2.jpg')",//Proposez une image de fond attrayante liée à l'agriculture.
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -124,7 +124,7 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm text-gray-700 ring-1 ring-green-600 hover:ring-green-800">
+            <div className="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-green-600 hover:ring-green-800">
               Modernisons l'agriculture ensemble.{' '}
               <a href="#" className="font-semibold text-green-700 hover:text-green-900">
                 <span aria-hidden="true" className="absolute inset-0" />
@@ -133,10 +133,10 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-300 sm:text-7xl">
               Libérez la puissance de <span className="text-green-700">l'IA et l'IoT</span> dans l'agriculture
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-200">
               Boostez vos récoltes, optimisez vos ressources et contribuez à un avenir agricole durable grâce à notre plateforme intelligente.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
