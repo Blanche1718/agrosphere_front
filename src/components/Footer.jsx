@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="relative z-50 bg-green-900 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div>
-          <img src="/iconw.svg" alt="Agrosphère" className="h-10 mb-4" />
+          <img src="/images/iconw.svg" alt="Agrosphère" className="h-10 mb-4" />
           <p className="text-sm">
             Agrosphère - Modernisons ensemble l’agriculture grâce à l’IA et l’IoT.
           </p>
