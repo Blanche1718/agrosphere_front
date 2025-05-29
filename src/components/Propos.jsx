@@ -6,7 +6,7 @@ export default function Propos() {
     {/* Image */}
     <div className="relative">
       <img
-        src="/images/logo.jpg"
+        src="/images/students.jpg"
         alt="Équipe Agrosphère"
         className="w-full rounded-lg shadow-lg object-cover"
       />
