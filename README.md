@@ -39,4 +39,9 @@ Va ensuite sur :
 http://localhost:5173
 
 
+npm install @headlessui/react @heroicons/react
+
+npm install @fortawesome/fontawesome-free
+
+
 

@@ -1,16 +1,14 @@
-import './App.css'
+import './App.css';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 function App() {
 
   return (
     <>
       <div>
-        <h1 className="text-3xl font-bold underline text-blue-500 border border-green-500">
-          Hello Tailwind!
-        </h1>
-
-
-       
+        <Hero />
+        <Footer/>
       </div>
      
     </>
