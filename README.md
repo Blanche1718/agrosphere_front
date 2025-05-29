@@ -52,3 +52,7 @@ Installe la bibliothèque d’icônes Font Awesome, utilisée pour afficher les 
 
 npm install react-router-dom
 Installer react router
+
+
+npm install react-router dom recharts
+Pour les graphiques 
