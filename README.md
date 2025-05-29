@@ -48,3 +48,7 @@ Installe les composants d’interface Headless UI (pour les dialogues, menus, et
 npm install @fortawesome/fontawesome-free
 ```
 Installe la bibliothèque d’icônes Font Awesome, utilisée pour afficher les logos des réseaux sociaux dans le footer.
+
+
+npm install react-router-dom
+Installer react router
