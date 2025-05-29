@@ -60,7 +60,7 @@ export default function Hero() {
                 <span className="sr-only">Agrosphère</span>
                 <img
                   alt="Agrosphère logo"
-                  src="images/logo_agrosphere.jpg"
+                  src="/icon.svg"
                   className="h-8 w-auto"
                 />
                 <span className="text-lg font-bold text-green-700">Agrosphère</span>
