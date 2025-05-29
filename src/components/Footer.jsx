@@ -57,7 +57,7 @@ export default function Footer() {
             placeholder="Votre e-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="px-3 py-2 rounded text-black border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="px-3 py-2 rounded text-white border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600"
             required
             />
 
