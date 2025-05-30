@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <div className="bg-white relative">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <nav aria-label="Global" className="flex items-center justify-between p-6 bg-white/20 backdrop-blur-md lg:px-8">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
               <span className="sr-only">Agrosphère</span>
@@ -47,7 +47,7 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold text-green-700 hover:text-green-900">
+            <a href="#" className="text-sm font-semibold text-green-700 hover:text-green-800">
               Se connecter <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -124,8 +124,9 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-green-600 hover:ring-green-800">
+            <div className="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-green-500 hover:ring-green-600">
               Modernisons l'agriculture ensemble.{' '}
+
               <a href="#propos" className="font-semibold text-green-700 hover:text-green-900">
                 <span aria-hidden="true" className="absolute inset-0" />
                 En savoir plus <span aria-hidden="true">&rarr;</span>
@@ -134,7 +135,7 @@ export default function Hero() {
           </div>
           <div className="text-center">
             <h1 className="text-5xl font-bold tracking-tight text-gray-300 sm:text-7xl">
-              Libérez la puissance de <span className="text-green-700">l'IA et l'IoT</span> dans l'agriculture
+              Libérez la puissance de <span className="text-green-600">l'IA et l'IoT</span> dans l'agriculture
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-200">
               Boostez vos récoltes, optimisez vos ressources et contribuez à un avenir agricole durable grâce à notre plateforme intelligente.
@@ -147,6 +148,7 @@ export default function Hero() {
                 Commencer
               </a>
               <a href="#solutions" className="text-sm font-semibold text-gray-900 hover:text-green-700">
+
                 Voir plus <span aria-hidden="true">→</span>
               </a>
             </div>
