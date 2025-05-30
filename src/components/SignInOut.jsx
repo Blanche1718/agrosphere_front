@@ -33,6 +33,7 @@ export default function SignInOut() {
                     </div>
                 </div>
                 <form className="[&_input]:text-gray-600 w-[75%] flex flex-col items-center gap-6" action="" method="post" >
+                    <h1 className="font-semibold text-green-400 text-3xl mb-5">S'inscrire</h1>
                     <input
                         className="w-md px-2 py-3 bg-gray-200 rounded-md focus:outline-2 outline-green-400/40 focus:bg-green-100/30"
                         required
