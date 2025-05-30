@@ -19,7 +19,7 @@ export default function Hero() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 bg-white/20 backdrop-blur-md lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
+            <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
               <span className="sr-only">Agrosphère</span>
               <img
                 alt="logo"
@@ -126,7 +126,8 @@ export default function Hero() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-green-500 hover:ring-green-600">
               Modernisons l'agriculture ensemble.{' '}
-              <a href="#" className="font-semibold text-green-500 hover:text-green-600">
+
+              <a href="#propos" className="font-semibold text-green-700 hover:text-green-900">
                 <span aria-hidden="true" className="absolute inset-0" />
                 En savoir plus <span aria-hidden="true">&rarr;</span>
               </a>
@@ -146,7 +147,7 @@ export default function Hero() {
               >
                 Commencer
               </a>
-              <a href="#" className="text-sm font-semibold text-gray-200 hover:text-green-400 transition duration-200">
+              <a href="#solutions" className="text-sm font-semibold text-gray-200 hover:text-green-700">
                 Voir plus <span aria-hidden="true">→</span>
               </a>
             </div>
