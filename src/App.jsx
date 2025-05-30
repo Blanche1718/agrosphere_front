@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Solutions from './components/Solutions';
 import Propos from './components/Propos';
 import Contact from './components/Contact';
-
+import SignInOut from './components/SignInOut';
 import Dashboard from './pages/Dashboard';
 import Historique from './pages/Historique';
 import Alertes from './pages/Alertes';
@@ -35,24 +35,27 @@ function App() {
             </section>
           </>
         } />
+        <Route path="/signIn" element={
+          <SignInOut />
 
+        } />
         <Route path="/dashboard" element={
-            <>
-              <Dashboard />
-              
-            </>
+          <>
+            <Dashboard />
+
+          </>
         } />
 
         <Route path="/galerie" element={
-            <>
-              <Galerie />
-            </>
+          <>
+            <Galerie />
+          </>
         } />
 
         <Route path="/controle" element={
-            <>
-              <Controle/>
-            </>
+          <>
+            <Controle />
+          </>
         } />
       </Routes>
     </BrowserRouter>

@@ -27,12 +27,12 @@ export default function SignInOut() {
                         <h1 className="text-white font-bold text-4xl">Bienvenue!</h1>
                         <p className="text-white/70">Créez votre compte et boostez votre rentabilité agricole</p>
                     </div>
-                    <div className="w-full h-auto px-5 py-4 flex flex-col bg-green-300/30 rounded-xl shadow-md/4 z-20">{/* to redirect a signed-in user to his connection page */}
+                    <div className="w-full h-auto px-5 py-4 flex flex-col bg-green-300/30 rounded-xl shadow-md/4 z-20 select-none">{/* to redirect a signed-in user to his connection page */}
                         <p className="text-white/60 text-md">Vous avez déjà un compte ?</p>
                         <h1 className="text-white font-bold text-2md">Se connecter</h1>
                     </div>
                 </div>
-                <form className="[&_input]:text-gray-400 w-[75%] flex flex-col items-center gap-6" action="" method="post" >
+                <form className="[&_input]:text-gray-600 w-[75%] flex flex-col items-center gap-6" action="" method="post" >
                     <input
                         className="w-md px-2 py-3 bg-gray-200 rounded-md focus:outline-2 outline-green-400/40 focus:bg-green-100/30"
                         required
@@ -52,7 +52,7 @@ export default function SignInOut() {
                         />
                     </div>
                     <button
-                    className="w-md px-2 py-3 bg-green-300 rounded-md text-white text-xl hover:bg-green-400 transition duration-200"  
+                    className="w-md px-2 py-3 bg-green-400 rounded-md text-white text-xl hover:bg-green-500 transition duration-200"  
                     type="submit">S'inscrire</button>
                 </form>
             </div>
