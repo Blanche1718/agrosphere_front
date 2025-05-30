@@ -33,7 +33,7 @@ export default function Hero() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-green-800"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-green-700"
             >
               <span className="sr-only">Ouvrir le menu</span>
               <Bars3Icon aria-hidden="true" className="size-6" />
@@ -141,12 +141,12 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="/dashboard"
-                className="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                href="/signIn"
+                className="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 transition duration-200 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-green-600"
               >
                 Commencer
               </a>
-              <a href="#" className="text-sm font-semibold text-gray-200 hover:text-green-700">
+              <a href="#" className="text-sm font-semibold text-gray-200 hover:text-green-400 transition duration-200">
                 Voir plus <span aria-hidden="true">→</span>
               </a>
             </div>
