@@ -6,12 +6,15 @@ import Footer from './components/Footer';
 import Solutions from './components/Solutions';
 import Propos from './components/Propos';
 import Contact from './components/Contact';
-import SignInOut from './components/SignInOut';
 import Dashboard from './pages/Dashboard';
 import Historique from './pages/Historique';
 import Alertes from './pages/Alertes';
 import Galerie from './pages/Galerie';
 import Controle from './pages/Controle';
+import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
+
+
 
 function App() {
   return (
@@ -35,10 +38,17 @@ function App() {
             </section>
           </>
         } />
-        <Route path="/signIn" element={
-          <SignInOut />
+
+        <Route path="/signUp" element={
+          <SignUp />
 
         } />
+
+          <Route path="/signIn" element={
+          <SignIn />
+
+        } />
+        
         <Route path="/dashboard" element={
           <>
             <Dashboard />

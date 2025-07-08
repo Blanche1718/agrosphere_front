@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+// Définition de la navigation principale du site
 const navigation = [
   { name: 'Accueil', href: '#' },
   { name: 'Solutions', href: '#solutions' },
@@ -12,12 +13,16 @@ const navigation = [
 ]
 
 export default function Hero() {
+  // État pour gérer l'ouverture du menu mobile
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
+    // Conteneur principal avec fond blanc
     <div className="bg-white relative">
+      {/* En-tête du site avec navigation */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 bg-white/20 backdrop-blur-md lg:px-8">
+          {/* Logo et nom du site */}
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
               <span className="sr-only">Agrosphère</span>
@@ -29,6 +34,7 @@ export default function Hero() {
               <span className="text-lg font-bold text-green-700">Agrosphère</span>
             </a>
           </div>
+          {/* Bouton menu hamburger pour mobile */}
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -39,6 +45,7 @@ export default function Hero() {
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
           </div>
+          {/* Liens de navigation pour desktop */}
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-sm font-semibold text-gray-900 hover:text-green-700">
@@ -46,12 +53,14 @@ export default function Hero() {
               </a>
             ))}
           </div>
+          {/* Lien de connexion pour desktop */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold text-green-700 hover:text-green-800">
               Se connecter <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
+        {/* Menu mobile (affiché quand mobileMenuOpen est true) */}
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-green-900/10">
@@ -65,6 +74,7 @@ export default function Hero() {
                 />
                 <span className="text-lg font-bold text-green-700">Agrosphère</span>
               </a>
+              {/* Bouton pour fermer le menu mobile */}
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -76,6 +86,7 @@ export default function Hero() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-green-100">
+                {/* Liens de navigation mobile */}
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
@@ -87,6 +98,7 @@ export default function Hero() {
                     </a>
                   ))}
                 </div>
+                {/* Lien de connexion mobile */}
                 <div className="py-6">
                   <a
                     href="#"
@@ -101,14 +113,15 @@ export default function Hero() {
         </Dialog>
       </header>
 
+      {/* Section principale du Hero avec image de fond */}
       <div className="relative isolate px-6 pt-14 lg:px-8"
       style={{
-        backgroundImage: "url('/images/herobg2.jpg')",//Proposez une image de fond attrayante liée à l'agriculture.
+        backgroundImage: "url('/images/herobg2.jpg')", // Image de fond liée à l'agriculture
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      
       >
+        {/* Effet de flou et dégradé décoratif en haut */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -122,37 +135,42 @@ export default function Hero() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-green-300 via-green-500 to-green-700 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72rem]"
           />
         </div>
+        {/* Contenu central du Hero */}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          {/* Bandeau d'accroche */}
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm text-gray-200 ring-1 ring-green-500 hover:ring-green-600">
               Modernisons l'agriculture ensemble.{' '}
-
               <a href="#propos" className="font-semibold text-green-700 hover:text-green-900">
                 <span aria-hidden="true" className="absolute inset-0" />
                 En savoir plus <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
+          {/* Titre principal */}
           <div className="text-center">
             <h1 className="text-5xl font-bold tracking-tight text-gray-300 sm:text-7xl">
               Libérez la puissance de <span className="text-green-600">l'IA et l'IoT</span> dans l'agriculture
             </h1>
+            {/* Description */}
             <p className="mt-6 text-lg leading-8 text-gray-200">
               Boostez vos récoltes, optimisez vos ressources et contribuez à un avenir agricole durable grâce à notre plateforme intelligente.
             </p>
+            {/* Boutons d'action */}
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="/signIn"
+                href="/signUp"
                 className="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-700 transition duration-200 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-green-600"
               >
                 Commencer
               </a>
-              <a href="#solutions" className="text-sm font-semibold text-gray-200 hover:text-green-700">
+              <a href="/dashboard" className="text-sm font-semibold text-gray-200 hover:text-green-700">
                 Voir plus <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
         </div>
+        {/* Effet de flou et dégradé décoratif en bas */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"

@@ -3,9 +3,9 @@
 
 export default function Solutions() {
   return (
-    <div className="bg-white py-16 sm:py-24">
+    <div className="bg-green-50 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Nos Solutions</h2>
+        <h2 className="text-3xl font-bold text-green-900 mb-8 text-center underline">Nos Solutions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="group bg-green-50 p-6 rounded-lg shadow-md hover:scale-102 transition duration-500 grayscale hover:grayscale-0">
             <img
